@@ -95,11 +95,7 @@ console.log(" ");
 
 console.log("Opdracht 5:");
 console.log("--------------------------");
-inventors.sort((a,b) => {
-  const livedYearsA = a.passed - a.year;
-  const livedYearsB = b.passed - b.year;
-  return livedYearsB - livedYearsA;
-});
+inventors.sort((a,b) => (a.passed - a.year) - (b.passed - b.year));
 console.log(inventors);
 console.log("--------------------------");
 console.log(" ");
